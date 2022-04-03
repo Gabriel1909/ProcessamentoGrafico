@@ -4,7 +4,7 @@ Arquivo para exemplificar como configurar os projetos e executar os exercícios.
 
 Configuração de todas Properties dentro dos projetos:
 
-	Configuration Properties -> C/C++ -> General -> Additional Include Directories: ../../utils/dependencies/glfw-3.3.4.bin.WIN32/include;../../utils/dependencies/GLAD/include
+	Configuration Properties -> C/C++ -> General -> Additional Include Directories: ../../utils/dependencies/glfw-3.3.4.bin.WIN32/include;../../utils/dependencies/GLAD/include;../../utils/dependencies/glm
 
 	Configuration Properties -> Linker -> General -> Additional Library Directories: ../../utils/dependencies/glfw-3.3.4.bin.WIN32/lib-vc2019
 
@@ -21,3 +21,8 @@ Lista 1:
 
   Exercício 9: somente um exercício executado, sem necessidade de alteração.
 
+Lista 2:
+
+	Exercício 2: descomentar linha 58 e comentar linha 57. 
+	Exercício 4: sem necessidade de alteração.
+	Exercício 5: descomentar as linhas 140 até 147. 
