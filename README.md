@@ -26,3 +26,8 @@ Lista 2:
 	Exercício 2: descomentar linha 58 e comentar linha 57. 
 	Exercício 4: sem necessidade de alteração.
 	Exercício 5: descomentar as linhas 140 até 147. 
+
+Lista 3:
+
+	Exercício 2: sem necessidade de alteração para subir. Usar as teclas "WASD" para mover a geometria.
+
