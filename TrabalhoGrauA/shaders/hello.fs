@@ -1,8 +1,12 @@
 #version 450
 
-uniform vec4 inputColor;
+in vec3 vertexColor;
+in vec2 texCoord;
+
 out vec4 color;
 
+uniform sampler2D tex_buffer;
+
 void main(){
-	color = inputColor;
+	color = texture(tex_buffer, texCoord);
 }
