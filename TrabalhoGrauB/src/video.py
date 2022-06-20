@@ -25,6 +25,8 @@ class Video:
 
         captura = cv.VideoCapture(path)
 
+        index.print_index()
+
         while 1:
 
             ret, frame = captura.read()
@@ -44,6 +46,7 @@ class Video:
                 if v.active:
                     if index.is_sticker(k):
                         img = cv.imread(v.path, cv.IMREAD_UNCHANGED)
+                        img = cv.resize(img, None, fx=0.7, fy=0.7)
                         frame = overlay_transparent(frame, img, v.x, v.y)
 
                     elif index.is_filter(k):

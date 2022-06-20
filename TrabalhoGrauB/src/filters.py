@@ -9,7 +9,7 @@ def is_gray(img):
 
 
 def gaussian(img):
-    return cv.GaussianBlur(img, (5, 5), 0)
+    return cv.GaussianBlur(img, (15, 15), 0)
 
 
 def gray(img):
@@ -25,7 +25,7 @@ def sharpen(img):
 
 
 def bright(img):
-    return cv.convertScaleAbs(img, beta=-60)
+    return cv.convertScaleAbs(img, beta=60)
 
 
 def sepia(img):

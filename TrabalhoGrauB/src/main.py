@@ -3,7 +3,7 @@ from video import Video
 
 if __name__ == "__main__":
 
-    option = input("Digite 1 para foto\nDigite 2 para vídeo\nDigite 3 para webcam\n")
+    option = input("Digite 1 para carregar imagem\nDigite 2 para carregar vídeo\nDigite 3 para carregar webcam\n")
 
     if option == '1':
         path = input("Digite o caminho da imagem: \n")

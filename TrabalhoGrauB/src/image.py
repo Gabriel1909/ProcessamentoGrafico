@@ -24,15 +24,14 @@ class Image:
 
     def execute(self, path):
         src = cv.imread(path, cv.IMREAD_COLOR)
-        src = cv.resize(src, (0, 0), fx=0.4, fy=0.4)
 
         self.states.append(src)
 
         cv.namedWindow('Trabalho grau B')
         cv.setMouseCallback('Trabalho grau B', self.draw_sticker)
 
-        print('1: Gaussian\n2: Grayscale\n3: Sharpen')
-        print('A: Bob Esponja\nB: Gato de botas\nC: Óculos')
+        index.print_index()
+        print('Pressione Backspace para reverter os últimos filtros/stickers')
 
         while 1:
 
@@ -54,4 +53,3 @@ class Image:
                     self.states.pop()
 
             cv.imshow('Trabalho grau B', img)
-
